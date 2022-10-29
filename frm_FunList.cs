@@ -114,6 +114,7 @@ namespace FunHour
 
                 if (sCell.ColumnIndex == 2)
                 {
+                    openFileDialog1.InitialDirectory = Application.StartupPath;
                     if (openFileDialog1.ShowDialog() == DialogResult.Cancel)
                         return;
                     // получаем выбранный файл

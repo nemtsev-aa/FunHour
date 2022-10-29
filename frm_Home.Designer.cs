@@ -39,6 +39,8 @@ namespace FunHour
             this.tsb_Select = new System.Windows.Forms.ToolStripButton();
             this.tsb_Settings = new System.Windows.Forms.ToolStripButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.tsl_WorkTime = new System.Windows.Forms.ToolStripLabel();
             this.ts_HomeMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -86,7 +88,9 @@ namespace FunHour
             this.ts_HomeMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsb_FunList,
             this.tsb_Select,
-            this.tsb_Settings});
+            this.tsb_Settings,
+            this.toolStripSeparator1,
+            this.tsl_WorkTime});
             this.ts_HomeMenu.Location = new System.Drawing.Point(0, 0);
             this.ts_HomeMenu.Name = "ts_HomeMenu";
             this.ts_HomeMenu.Size = new System.Drawing.Size(390, 37);
@@ -134,6 +138,19 @@ namespace FunHour
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 37);
+            // 
+            // tsl_WorkTime
+            // 
+            this.tsl_WorkTime.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tsl_WorkTime.Name = "tsl_WorkTime";
+            this.tsl_WorkTime.Size = new System.Drawing.Size(96, 34);
+            this.tsl_WorkTime.Text = "00:00:00";
+            this.tsl_WorkTime.ToolTipText = "Время до следующего отдыха";
+            // 
             // frm_Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -168,6 +185,8 @@ namespace FunHour
         private System.Windows.Forms.ToolStripButton tsb_FunList;
         private System.Windows.Forms.ToolStripButton tsb_Select;
         private System.Windows.Forms.ToolStripButton tsb_Settings;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripLabel tsl_WorkTime;
     }
 }
 

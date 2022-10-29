@@ -33,6 +33,8 @@ namespace FunHour
             SelectStatus = false;
             timer1.Interval = 100;
             timer1.Start();
+            lab_FreeTimeValue.Text = new TimeSpan(0, SelectionTime,0).ToString(@"hh\:mm\:ss");
+
         }
         
         private void timer1_Tick(object sender, EventArgs e)
